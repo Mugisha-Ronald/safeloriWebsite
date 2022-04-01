@@ -1,0 +1,772 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+}
+body{
+    background-color: rgb(238, 236, 236);
+}
+/* Contents of the msin/home page{styling} */
+
+.backgroundImgae{
+   width: 100%;
+}
+
+.backgroundImgae img{
+
+    width: 100%;
+}
+
+.header-section{
+    /* background-color: yellowgreen; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding-bottom: 10px;
+    
+    
+}
+
+.header-section .logoPart img{
+
+    width: 200px;
+    height: 64px;
+
+    padding-left: 32px;
+    padding-top: 10px;
+    
+}
+
+.header-section ul{
+    display: inline-flex;
+    list-style: none;
+    color: #fff;
+}
+
+.header-section ul li{
+    /* width: 120px; */
+    margin: 15px;
+    padding: 15px;
+}
+
+.header-section ul li a{
+    text-decoration: none;
+    color: rgb(68, 66, 66);
+}
+
+.header-section ul li:hover{
+    /* background-color: #2bab0d; */
+    background-color: rgb(124, 170, 51);
+    border-radius: 3px;
+}
+
+.sub-menu{
+    display: none;
+}
+
+.header-section ul li:hover .sub-menu{
+    display: block;
+    position: absolute;
+    background: rgb(124, 170, 51);
+    margin-top: 15px;
+}
+.header-section ul li:hover .sub-menu ul{
+    display: block;
+    margin: 10px;
+}
+
+.header-section ul li:hover .sub-menu ul li{
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px dotted rgb(35, 25, 5);
+    border-radius: 0;
+    text-align: left;
+}
+
+.header-section ul li:hover .sub-menu ul li:last-child{
+
+    border-bottom: none;
+}
+
+.header-section ul li:hover .sub-menu ul li a:hover{
+
+    color: rgb(35, 25, 5);
+}
+
+.buttons{
+    padding-top: 10px;
+}
+
+.bk-btn{
+    border: none;
+    color: white;
+    padding: 14px 20px;
+    margin-left: 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    /* background-color: yellowgreen; */
+    background-color: rgb(35, 25, 5);
+    width: 200px;
+}
+
+.bk-btn:hover{
+    cursor: pointer;
+    /* background: #2bab0d; */
+    background: rgb(124, 170, 51);
+}
+
+.rsve-btn{
+    border: none;
+    color: white;
+    padding: 14px 20px;
+    margin-left: 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    /* background-color: yellowgreen; */
+    background-color: rgb(35, 25, 5);
+    width: 200px;
+}
+
+.rsve-btn:hover{
+    cursor: pointer;
+    /* background: #2bab0d; */
+    background: rgb(124, 170, 51);
+}
+
+
+
+
+.whoweAre{
+    display: flex;
+    width: 100%;
+    background-color: rgb(35, 25, 5);
+    height: 500px;
+    justify-content: space-evenly;
+}
+
+.txt{
+    padding-left: 100px;
+    padding-top: 100px;
+    padding-bottom: 150px;
+    margin-top: 150px;
+    width: 650px;
+    color: #fff;
+}
+
+
+
+.para{
+
+    padding-top: 220px;
+    padding-left: 200px;
+    margin-bottom: 450px;
+    margin-left: 300px;
+    padding-right: 100px;
+    color: #fff;
+}
+
+/* styling the services section*/
+
+.services{
+    text-align: center;
+}
+
+.services h1{
+    display: inline-block;
+    text-transform: uppercase;
+    border-bottom: 4px solid rgb(35, 25, 5);
+    font-size: 20px;
+    padding-bottom: 10px;
+    margin-top: 40px;
+}
+
+.cen{
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
+    padding: 20px;
+}
+
+.service{
+    display: inline-block;
+    width: calc(100%/3);
+    margin: 0 -2px;
+    padding: 20px;
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.service:hover{
+    background: #ddd;
+}
+
+.service i{
+    color: rgb(35, 25, 5);
+    font-size: 34px;
+    margin-bottom: 30px;
+}
+
+.service h2{
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin: 0;
+}
+
+.service p{
+    color: grey;
+    font-size: 15px;
+    font-weight: 500;
+
+}
+
+@media screen and (max-width:800px) {
+
+    .service{
+        width: 50%;
+    }
+    
+}
+
+
+@media screen and (max-width:500px) {
+
+    .service{
+        width: 100%;
+    }
+    
+}
+
+/* styling the mission section*/
+
+.mission-section{
+    display: flex;
+    width: 100%;
+    background-color: rgb(35, 25, 5);
+    height: 500px;
+    justify-content: space-evenly;
+}
+
+
+.thepara{
+
+    padding-top: 150px;
+    padding-left: 20px;
+    /* margin-bottom: 450px; */
+    margin-left: 10px;
+    color: #fff;
+    width: 500px;
+}
+
+
+.txt-msin{
+    padding-left: 400px;
+    padding-top: 100px;
+    padding-bottom: 150px;
+    margin-top: 150px;
+    width: 650px;
+    color: #fff;
+}
+
+
+
+
+.values-section{
+    display: flex;
+    width: 100%;
+    /* background-color: rgb(35, 25, 5); */
+    background-color:rgb(124, 170, 51);
+    height: 500px;
+    justify-content: space-evenly;
+}
+
+.txt-vales{
+    padding-left: 100px;
+    padding-top: 100px;
+    padding-bottom: 150px;
+    margin-top: 150px;
+    width: 650px;
+    color: #fff;
+}
+
+
+
+.para-values{
+
+    padding-top: 220px;
+    padding-left: 200px;
+    margin-bottom: 450px;
+    margin-left: 300px;
+    padding-right: 100px;
+    color: #fff;
+}
+
+
+
+.visioin-section{
+    display: flex;
+    width: 100%;
+    /* background-color: rgb(35, 25, 5); */
+    height: 500px;
+    justify-content: space-evenly;
+}
+
+
+.thepara-vision{
+
+    padding-top: 150px;
+    padding-left: 20px;
+    /* margin-bottom: 450px; */
+    margin-left: 10px;
+    color: rgb(35, 25, 5);
+    width: 500px;
+}
+
+.txt-vision{
+    padding-left: 400px;
+    padding-top: 100px;
+    padding-bottom: 150px;
+    margin-top: 150px;
+    width: 650px;
+    color: rgb(35, 25, 5);
+}
+
+
+
+
+ /* styling the contact page*/
+.contact{
+    position: relative;
+    min-height: 100vh;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* background: url('./images/safelori.jpg'); */
+    /* background: rgb(35, 25, 5); */
+    background: rgb(124, 170, 51);
+    background-size: cover;
+}
+
+.contact .contact-content{
+    max-width: 800px;
+    text-align: center;
+    padding-bottom: 50px;
+
+}
+
+.contact .contact-content h2{
+
+    font-size: 36px;
+    font-weight: 500;
+    color: #fff;
+    margin-bottom: 10px;
+
+}
+
+
+.contact .contact-content p{
+
+    font-weight: 300;
+    color: #fff;
+}
+
+
+.myContainer{
+
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+
+}
+
+
+.myContainer .contactInfo{
+
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.myContainer .contactInfo .box{
+
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+
+}
+
+
+.myContainer .contactInfo .box .icon{
+
+    min-width: 60px;
+    height: 60px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 22px;
+}
+
+.myContainer .contactInfo .box .text{
+
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    color: #fff;
+    flex-direction: column;
+    font-weight: 300;
+
+}
+
+
+.myContainer .contactInfo .box .text h3{
+
+    font-weight: 500;
+    /* color: rgb(124, 170, 51); */
+    color: rgb(35, 25, 5);
+}
+
+.contactForm{
+
+    width: 40%;
+    padding: 40px;
+    background: #fff;
+}
+
+.contactForm h2{
+
+    font-size: 30px;
+    color: #333;
+    font-weight: 500;
+
+}
+
+
+.contactForm .inputBox{
+
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+
+}
+
+.contactForm .inputBox input,
+.contactForm .inputBox textarea
+{
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+    resize: none;
+
+}
+
+
+.contactForm .inputBox span{
+
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: #666;
+
+}
+
+
+.contactForm .inputBox input:focus ~ span,
+.contactForm .inputBox input:valid ~ span,
+.contactForm .inputBox textarea:focus ~ span,
+.contactForm .inputBox textarea:valid ~ span
+
+{
+
+    color: rgb(35, 25, 5);
+    font-size: 12px;
+    transform: translateY(-20px);
+}
+
+
+
+.contactForm .inputBox input[type="submit"]{
+
+    width: 100px;
+    background: rgb(124, 170, 51);
+    /* color: #fff; */
+    color: rgb(35, 25, 5);
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+}
+
+
+@media (max-width: 991px)
+{
+
+    .contact{
+        padding: 50px;
+    }
+
+    .myContainer{
+
+        flex-direction: column;
+    }
+
+    .myContainer .contactInfo{
+
+        margin-bottom: 40px;
+
+    }
+
+    .myContainer .contactInfo,
+    .contactForm
+    {
+        width: 100%;
+    }
+}
+
+/* body footer{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+    background: #ede7f6;
+} */
+
+
+
+/* styling the footer*/
+footer{
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 50px 100px;
+    background: rgb(35, 25, 5);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+footer .footer-container{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+
+
+footer .footer-container .sec{
+
+    margin-right: 30px;
+
+}
+
+
+footer .footer-container .sec.aboutus{
+
+    width: 40%;
+}
+
+footer .footer-container  h2{
+
+    position: relative;
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 15px;
+
+}
+
+footer .footer-container  h2:before{
+
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    background: #f00;
+}
+
+
+footer  p{
+
+    color: #999;
+}
+
+.sci{
+
+    margin-top: 20px;
+    display: flex;
+}
+
+.sci li{
+
+    list-style: none;
+}
+
+.sci li a{
+
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background: #222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.sci li a:hover{
+    background: #f00;
+}
+
+.sci li a .fa,
+.fa-brands
+{
+
+    color: #fff;
+    font-size: 20px;
+}
+
+.quickLinks{
+
+    position: relative;
+    width: 25%;
+}
+
+.quickLinks ul li{
+    list-style: none;
+}
+
+.quickLinks ul li a{
+    color: #999;
+    text-decoration: none;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+.quickLinks ul li a:hover{
+
+    color: #fff;
+}
+
+
+.contact-part{
+
+    width: calc(35% - 60px);
+    margin-right: 0 !important;
+}
+
+.contact-part .info{
+
+    position: relative;
+}
+
+.contact-part .info li{
+
+    display: flex;
+    margin-bottom: 16px;
+}
+
+.contact-part .info li span:nth-child(1){
+
+    color: #fff;
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+
+.contact-part .info li span{
+
+    color: #999;
+}
+
+.contact-part .info li a{
+
+    color: #999;
+    text-decoration: none;
+}
+
+.contact-part .info li a:hover{
+
+    color: #fff;
+}
+
+.copyrightText{
+
+    width: 100%;
+    /* background: #181818; */
+    background: rgb(68, 49, 11);
+    padding: 8px 100px;
+    text-align: center;
+    color: #999;
+}
+
+@media (max-width: 991px){
+
+    footer{
+
+        padding: 40px;
+    }
+
+    footer .footer-container{
+
+        flex-direction: column;
+    }
+
+
+    footer .footer-container .sec{
+
+        margin-right: 0;
+        margin-bottom: 40px;
+    }
+
+
+    footer .footer-container .sec.aboutus,
+    .quickLinks,
+    .contact-part
+    
+    {
+
+        width: 100%;
+    }
+
+    .copyrightText{
+
+        padding: 8px 40px;
+    }
+
+
+
+}
+
+
+
+
+
