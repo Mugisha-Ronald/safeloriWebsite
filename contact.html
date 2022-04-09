@@ -6,50 +6,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>contact</title>
 
+     <!-- font awesome -->
+     <script src="https://kit.fontawesome.com/c4942d9423.js" crossorigin="anonymous"></script>
+
     <link rel="stylesheet" href="./style.css">
-      <!-- font awesome -->
-      <script src="https://kit.fontawesome.com/c4942d9423.js" crossorigin="anonymous"></script>
+     
 
 </head>
 <body>
-
-
     
-    <header class="header-section">
+    <nav>
 
-        <div class="logoPart">
-            <a href="home.html"><img src="./images/SafeLoriLogo.png" alt=""></a>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+
+            <i class="fas fa-bars" ></i>
+        </label>
+
+        <div class="logo">
+            <a href="./index.html"><p><img src="./images/Capture.PNG" alt=""></p></a>
         </div>
-
         <ul>
-            <li class=""><a href="about.html"> About Us</a>
-                <!-- <div class="sub-menu">
-                    <ul>
-                        <li><a href="">Who we are</a></li>
-                        <li><a href="">Services</a></li>
-                        <li><a href="">Clients</a></li>
-                        <li><a href="">Partners</a></li>
-                        <li><a href="">Solutions</a></li>
-                        <li><a href="">Mission</a></li>
-                        <li><a href="">Values</a></li>
-                        <li><a href="">Vision</a></li>
-                        <li><a href="">Team</a></li>
-                    </ul>
-                </div> -->
-            
-            </li>
-            <li><a href=""> Electric truck </a></li>
-            <li><a href=""> Pay-As-You-Drive </a></li>
-            <li><a href=""> Careers </a></li>
-            <li><a href=""> News </a></li>
-            <li><a href="contact.html"> Contact </a> </li>
+            <li><a href="./about.html" class="active">About Us</a></li>
+            <li><a href="./electricTruck.html">Electrick truck</a></li>
+            <li><a href="./payAsYouDrive.html">Pay-As-You-Drive</a></li>
+            <!-- <li><a href="">Careers</a></li>
+            <li><a href="">News</a></li> -->
+            <li><a href="./contact.html">Contact</a></li>
+            <li><a href="https://booking.safelori.com/" target="_blank"><button>Book a Delivery</button></a></li>
+            <li><a href=""><button>Reserve a Truck</button></a></li>
         </ul>
-
-        <div class="buttons">
-            <button  class="bk-btn">Book a Delivery</button>
-            <button class="rsve-btn">Reserve a Truck</button>
-        </div>
-</header>
+    </nav>
 
 
     <section class="contact">
@@ -92,20 +79,20 @@
 
             <div class="contactForm">
 
-                <form action="">
+                <form class="contact-form" method="POST" action="">
                     <h2>Send Message</h2>
                     <div class="inputBox">
-                        <input type="text" name="" required="required">
+                        <input type="text" name="" required="required" class="input-1">
                         <span>Full Name</span>
                     </div>
 
                     <div class="inputBox">
-                        <input type="text" name="" required="required">
+                        <input type="text" name="" required="required" class="email">
                         <span>Email</span>
                     </div>
 
                     <div class="inputBox">
-                        <textarea required="required"></textarea>
+                        <textarea class="message" required="required"></textarea>
                         <span>Type Your Message...</span>
                     </div>
 
@@ -128,10 +115,10 @@
                 </p>
 
                 <ul class="sci">
-                    <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                    <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                    <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                    <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+                    <li><a href="https://www.facebook.com/safelori256/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                    <li><a href="https://twitter.com/safe_lori" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                    <li><a href="https://www.instagram.com/safelori_logistics/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                    <li><a href="https://www.linkedin.com/company/78828841" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
                 </ul>
 
             </div>
@@ -140,12 +127,12 @@
 
                 <h2>Quick Links</h2>
                 <ul>
-                    <li><a href="">About</a></li>
-                    <li><a href="">Electric truck</a></li>
-                    <li><a href="">Pay-As-You-Drive</a></li>
-                    <li><a href="">Careers</a></li>
-                    <li><a href="">News</a></li>
-                    <li><a href="">Contact</a></li>
+                    <li><a href="./about.html">About</a></li>
+                    <li><a href="./electricTruck.html">Electric truck</a></li>
+                    <li><a href="./payAsYouDrive.html">Pay-As-You-Drive</a></li>
+                    <!-- <li><a href="">Careers</a></li>
+                    <li><a href="">News</a></li> -->
+                    <li><a href="./contact.html">Contact</a></li>
                 </ul>
 
             </div>
@@ -189,8 +176,7 @@
 
 
 
-   
-    
-    <script src="./main.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>  
+    <script src="./sendEmail.js"></script>
 </body>
 </html>
